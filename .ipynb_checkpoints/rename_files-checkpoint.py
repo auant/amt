@@ -36,10 +36,10 @@ if __name__ == '__main__':
     rename_files(f"{args.folder_path}/textures", 20, 29, 2)
     rename_files(f"{args.folder_path}/textures", 10, 19, 1)
     
-#     rename_files(f"{args.folder_path}/splice", 40, 49, 4)
-#     rename_files(f"{args.folder_path}/splice", 30, 39, 3)
-#     rename_files(f"{args.folder_path}/splice", 20, 29, 2)
-#     rename_files(f"{args.folder_path}/splice", 10, 19, 1)
+    rename_files(f"{args.folder_path}/splice", 40, 49, 4)
+    rename_files(f"{args.folder_path}/splice", 30, 39, 3)
+    rename_files(f"{args.folder_path}/splice", 20, 29, 2)
+    rename_files(f"{args.folder_path}/splice", 10, 19, 1)
     
     rename_files(f"{args.folder_path}/wct2", 40, 49, 4)
     rename_files(f"{args.folder_path}/wct2", 30, 39, 3)
