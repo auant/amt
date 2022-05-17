@@ -11,6 +11,7 @@ if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument("--folder_path", type=str)
     args = parser.parse_args()
+
     rename_files(f"{args.folder_path}/ours", 40, 49, 4)
     rename_files(f"{args.folder_path}/ours", 30, 39, 3)
     rename_files(f"{args.folder_path}/ours", 20, 29, 2)
