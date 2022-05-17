@@ -5,14 +5,20 @@ import os
 
 
 def sample_images():
-    root_folder = f"/home/projects/talide/splicing_shape_texture/shir/htmls/baselines/flowers_inference"
-    target_folder = "./flowers"
-    indices =  [0, 1, 4, 5, 7, 10, 12, 13, 14, 15, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 30, 32, 33, 35, 37, 38, 39, 41,  50, 51, 53, 54, 55, 56, 57, 58, 62, 64, 69, 70, 72, 73, 74, 76, 79, 80, 81,  87, 99]
-    cur_idx = 0
+    root_folder = f"/home/projects/talide/splicing_shape_texture/shir/htmls/baselines/sd_horses_inference/splice"
+    target_folder = "./splice"
+#     indices =  [110, 119, 122, 135, 149, 164, 171, 186, 193, 197, 202, 208, 215, 222, 229, 247, 264, 275, 277 ]
+    indices = [1,10,16, 23,25, 28,29, 34, 37, 43, 45,47,59, 67, 72, 74, 99 ]
+    cur_idx = 37
 
     for idx in indices:
-        shutil.copy(f"{root_folder}/ours/{idx}.png", f"{target_folder}/ours/{cur_idx}.png")
-#         shutil.copy(f"{root_folder}/appearance/{idx}.png", f"{target_folder}/textures/{cur_idx}.png")
+#         shutil.copy(f"{root_folder}/ours/{idx}.png", f"{target_folder}/ours/{cur_idx}.png")
+#         shutil.copy(f"{root_folder}/wct2/{idx}.png", f"{target_folder}/wct2/{cur_idx}.png")
+#         shutil.copy(f"{root_folder}/SA/{idx}.png", f"{target_folder}/sa/{cur_idx}.png")
+#         shutil.copy(f"{root_folder}/korean/{idx}.png", f"{target_folder}/sd/{cur_idx}.png")
+        shutil.copy(f"{root_folder}/splice/{idx}.png", f"{target_folder}/splice/{cur_idx}.png")
+#         shutil.copy(f"{root_folder}/appearance/{idx}.png", f"{target_folder}/structures/{cur_idx}.png")
+#         shutil.copy(f"{root_folder}/structure/{idx}.png", f"{target_folder}/textures/{cur_idx}.png")
         cur_idx += 1
 
 
