@@ -38,15 +38,17 @@
         for (i = 0; i < 100; i++) {
             img_idx = offset+i
             root.innerHTML += '<p>'+img_idx+'</p>'
-            root.innerHTML += `<div class='img_container'> <div>appearance</div> <img class='image' src='./appearance/${img_idx}.png' /> </div>`
-            root.innerHTML += `<div class='img_container'> <div>structure</div> <img class='image' src='./structure/${img_idx}.png' /> </div>`
+            root.innerHTML += `<div class='img_container'> <div>appearance</div> <img class='image' src='./textures/${img_idx}.jpg' /> </div>`
+            root.innerHTML += `<div class='img_container'> <div>structure</div> <img class='image' src='./structures/${img_idx}.jpg' /> </div>`
 
 
-            root.innerHTML += `<div class='img_container'> <div>Korean</div> <img class='image' src='./swap/${img_idx}.png' alt='N/A' /> </div>`
-            root.innerHTML += `<div class='img_container'> <div>SA</div> <img class='image' src='./SA/${img_idx}.png' alt='N/A' /> </div>`
-            root.innerHTML += `<div class='img_container'> <div>wct2</div> <img class='image' src='./wct2/${img_idx}.png' alt='N/A' /> </div>`
-            root.innerHTML += `<div class='img_container'> <div>Splice</div> <img class='image' src='./splice/${img_idx}.png' alt='N/A' /> </div>`
-            root.innerHTML += `<div class='img_container'> <div>SpliceNet, LPIPS</div> <img class='image' src='./ours/${img_idx}.png' alt='N/A' /> </div>`
+            root.innerHTML += `<div class='img_container'> <div>Korean</div> <img class='image' src='./sd/${img_idx}.jpg' alt='N/A' /> </div>`
+            root.innerHTML += `<div class='img_container'> <div>SA</div> <img class='image' src='./sa/${img_idx}.jpg' alt='N/A' /> </div>`
+            root.innerHTML += `<div class='img_container'> <div>wct2</div> <img class='image' src='./wct2/${img_idx}.jpg' alt='N/A' /> </div>`
+            root.innerHTML += `<div class='img_container'> <div>SpliceNet, LPIPS</div> <img class='image' src='./ours/${img_idx}.jpg' alt='N/A' /> </div>`
+            root.innerHTML += `<div class='img_container'> <div>SpliceNet, CNN</div> <img class='image' src='./ours_cnn/${img_idx}.jpg' alt='N/A' /> </div>`
+            root.innerHTML += `<div class='img_container'> <div>SpliceNet, w/o pairing</div> <img class='image' src='./ours_wo_pairing/${img_idx}.jpg' alt='N/A' /> </div>`
+            root.innerHTML += `<div class='img_container'> <div>SpliceNet, LPIPS, skipmod_off</div> <img class='image' src='./ours_skipmod_off/${img_idx}.png' alt='N/A' /> </div>`
             root.innerHTML += ` <br />`
             root.innerHTML += ` <hr />`
             root.innerHTML += ` <br />`
